@@ -5,20 +5,16 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
-using WebrunsDemo.Servics;
+using Demo.Models;
+using Demo.Servics;
 
-namespace WebrunsDemo.Pages
+namespace Demo.Pages
 {
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
         public readonly IMqttService _mqttService;
-        
-        public class UserRequst
-        {
-            public string dev { get; set; }
-            public string opr { get; set; }
-        }
+                
 
         public IndexModel(ILogger<IndexModel> logger, IMqttService mqttService)
         {
@@ -31,7 +27,7 @@ namespace WebrunsDemo.Pages
 
         }
 
-        public async Task<ActionResult> OnPostPostOperationAsync([FromBody] UserRequst operation)
+        public async Task<ActionResult> OnPostPostOperationAsync([FromBody] UserRequest operation)
         {
             if(operation.dev == "Mote")
                 await _mqttService.PublishAsync("/iot/zolertia/cmd", operation.opr);

@@ -6,9 +6,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using WebrunsDemo.Servics;
+using Demo.Servics;
 
-namespace WebrunsDemo
+namespace Demo
 {
     public class Program
     {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\WebrunsDemo.csproj": {}
+    "C:\\Users\\Yas\\source\\repos\\Demo\\WebrunsDemo\\WebrunsDemo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\WebrunsDemo.csproj": {
+    "C:\\Users\\Yas\\source\\repos\\Demo\\WebrunsDemo\\WebrunsDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\WebrunsDemo.csproj",
+        "projectUniqueName": "C:\\Users\\Yas\\source\\repos\\Demo\\WebrunsDemo\\WebrunsDemo.csproj",
         "projectName": "WebrunsDemo",
-        "projectPath": "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\WebrunsDemo.csproj",
+        "projectPath": "C:\\Users\\Yas\\source\\repos\\Demo\\WebrunsDemo\\WebrunsDemo.csproj",
         "packagesPath": "C:\\Users\\Yas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\obj\\",
+        "outputPath": "C:\\Users\\Yas\\source\\repos\\Demo\\WebrunsDemo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Yas\\AppData\\Roaming\\NuGet\\NuGet.Config",

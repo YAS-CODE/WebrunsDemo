@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WebrunsDemo.Hubs;
-using WebrunsDemo.Servics;
+using Demo.Hubs;
+using Demo.Servics;
 
-namespace WebrunsDemo
+namespace Demo
 {
     public class Startup
     {
@@ -26,10 +26,24 @@ namespace WebrunsDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+
+
             services.AddRazorPages();
             services.AddSingleton<IMqttService, MqttService>();
             services.AddAntiforgery(x => x.HeaderName = "X-XSRF-TOKEN");
             services.AddSignalR();
+
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +60,7 @@ namespace WebrunsDemo
                 app.UseHsts();
             }
 
+            app.UseCors();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
@@ -56,6 +71,7 @@ namespace WebrunsDemo
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
                 endpoints.MapHub<DevicesHub>("/devHub");
             });
 
@@ -65,6 +81,14 @@ namespace WebrunsDemo
                                         .GetRequiredService<IHubContext<DevicesHub>>();
                 //...
             });
+
+
+            // global cors policy
+            /*app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());*/
         }
     }
 }

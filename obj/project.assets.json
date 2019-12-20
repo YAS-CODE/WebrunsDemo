@@ -3847,11 +3847,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\WebrunsDemo.csproj",
-      "projectName": "WebrunsDemo",
-      "projectPath": "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\WebrunsDemo.csproj",
+      "projectUniqueName": "C:\\Users\\Yas\\source\\repos\\WebRunsDemo\\Demo\\Demo.csproj",
+      "projectName": "Demo",
+      "projectPath": "C:\\Users\\Yas\\source\\repos\\WebRunsDemo\\Demo\\Demo.csproj",
       "packagesPath": "C:\\Users\\Yas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yas\\source\\repos\\WebrunsDemo\\WebrunsDemo\\obj\\",
+      "outputPath": "C:\\Users\\Yas\\source\\repos\\WebRunsDemo\\Demo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Yas\\AppData\\Roaming\\NuGet\\NuGet.Config",

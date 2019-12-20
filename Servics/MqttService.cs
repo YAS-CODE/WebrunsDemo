@@ -4,14 +4,17 @@ using MQTTnet.Client.Connecting;
 using MQTTnet.Client.Disconnecting;
 using MQTTnet.Client.Options;
 using MQTTnet.Extensions.ManagedClient;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebrunsDemo.Hubs;
+using Demo.Data;
+using Demo.Hubs;
+using Demo.Models;
 
-namespace WebrunsDemo.Servics
+namespace Demo.Servics
 {
     public interface IMqttService
     {
@@ -81,6 +84,10 @@ namespace WebrunsDemo.Servics
                         else if(payload.Contains("Deactivated_bme280_temperature_sensor"))
                             await _hubContext.Clients.All.SendAsync("ReceiveMessage", "/iot/sensor/replay", "off");
                     }
+                    else if (topic == "/iot/zolertia/data")
+                    {
+                        StorageSingleton.Instance.DeviceData = JsonConvert.DeserializeObject<DeviceData>(payload);
+                    }
                 }
             }
             catch (Exception ex)
@@ -99,6 +106,7 @@ namespace WebrunsDemo.Servics
             Console.WriteLine("Connected successfully with MQTT Brokers.");
             _ = SubscribeAsync("/iot/zolertia/reply", 1);
             _ = SubscribeAsync("/iot/sensor/reply", 1);
+            _ = SubscribeAsync("/iot/zolertia/data", 1);
         }
 
         public bool IsConnectedAsync()

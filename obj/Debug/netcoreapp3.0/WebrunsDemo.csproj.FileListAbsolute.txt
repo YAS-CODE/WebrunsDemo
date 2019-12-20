@@ -9,7 +9,6 @@ C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\bin\Debug\netcoreapp3.0\Webrun
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\bin\Debug\netcoreapp3.0\WebrunsDemo.pdb
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\bin\Debug\netcoreapp3.0\WebrunsDemo.Views.dll
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\bin\Debug\netcoreapp3.0\WebrunsDemo.Views.pdb
-C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\obj\Debug\netcoreapp3.0\WebrunsDemo.csprojAssemblyReference.cache
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\obj\Debug\netcoreapp3.0\staticwebassets\WebrunsDemo.StaticWebAssets.Manifest.cache
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\obj\Debug\netcoreapp3.0\staticwebassets\WebrunsDemo.StaticWebAssets.xml
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\obj\Debug\netcoreapp3.0\WebrunsDemo.RazorAssemblyInfo.cache
@@ -40,3 +39,4 @@ C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\bin\Debug\netcoreapp3.0\~\js\p
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\bin\Debug\netcoreapp3.0\Microsoft.AspNet.SignalR.Client.dll
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\obj\Debug\netcoreapp3.0\WebrunsDemo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Yas\source\repos\WebrunsDemo\WebrunsDemo\obj\Debug\netcoreapp3.0\WebrunsDemo.csprojAssemblyReference.cache

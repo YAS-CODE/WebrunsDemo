@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebrunsDemo.Hubs
+namespace Demo.Hubs
 {
     public class DevicesHub : Hub
     {
